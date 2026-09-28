@@ -1,0 +1,9 @@
+node_modules/
+
+# Результаты тестов
+playwright-report/
+test-results/
+
+# Файлы, созданные OneDrive
+*-DESKTOP-*
+*DESKTOP-L6ONBM4*
