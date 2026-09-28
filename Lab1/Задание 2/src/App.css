@@ -1,6 +1,51 @@
 html,
-body,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #root {
     height: 100%;
-    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 300px;
+    width: 700px;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex-container>div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #DAA520;
+}
+
+.flex-container>div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.flex-container>div:nth-child(even) {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.flex-container>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.flex-container>div:nth-child(5) {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
 }
